@@ -11,7 +11,7 @@ class Enkryptify < Formula
   on_macos do
     on_intel do
       url "https://github.com/Enkryptify/cli/releases/download/v0.1.1/enkryptify_Darwin_x86_64.tar.gz"
-      sha256 "5dd39bf4d9f394e1d7b152af2b0dd1355ab1160f2fb259e4b551e878844bb04e"
+      sha256 "b79ba9f13197f593ad02344e9938a36b504a0ed74bfb486ab0e72eceadf0f9e3"
 
       def install
         bin.install "enkryptify"
@@ -19,7 +19,7 @@ class Enkryptify < Formula
     end
     on_arm do
       url "https://github.com/Enkryptify/cli/releases/download/v0.1.1/enkryptify_Darwin_arm64.tar.gz"
-      sha256 "202bb562a702aa4aadeda3001df5ace1a3918f326468ba85f506379fed7b20f9"
+      sha256 "7699b8363e58fe3049c662d074361c932f4227156ad261563d6bbffddc25a013"
 
       def install
         bin.install "enkryptify"
@@ -31,7 +31,7 @@ class Enkryptify < Formula
     on_intel do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Enkryptify/cli/releases/download/v0.1.1/enkryptify_Linux_x86_64.tar.gz"
-        sha256 "43d1704ab166a6610d781ba2a84990a3caf92ce7904e47f586cc1fbbaaecbabc"
+        sha256 "aa1fe80917cbfaf04d3453c5c501c39c7da59754633a52b5f587f9292827fd9c"
 
         def install
           bin.install "enkryptify"
@@ -41,7 +41,7 @@ class Enkryptify < Formula
     on_arm do
       if !Hardware::CPU.is_64_bit?
         url "https://github.com/Enkryptify/cli/releases/download/v0.1.1/enkryptify_Linux_armv6.tar.gz"
-        sha256 "72c80fce791a0b0b7307ff463eaa8c0333ea06a7ef810eddc08c0ee2bec0e09e"
+        sha256 "af2142325ede5d6e726d352e550efa6f5e937aa252fcf5b47715b143f20c53b8"
 
         def install
           bin.install "enkryptify"
@@ -51,7 +51,7 @@ class Enkryptify < Formula
     on_arm do
       if Hardware::CPU.is_64_bit?
         url "https://github.com/Enkryptify/cli/releases/download/v0.1.1/enkryptify_Linux_arm64.tar.gz"
-        sha256 "4f94325d62a7b2db10711fab4f74515822de060baab50e6130514c8d2aa1c3ef"
+        sha256 "4290d4aacc6fb73b47a296eb06c445e637b6713dc6f03f59b0773917be26e3b4"
 
         def install
           bin.install "enkryptify"
