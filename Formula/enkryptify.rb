@@ -5,21 +5,21 @@
 class Enkryptify < Formula
   desc "Official Enkryptify CLI for injecting secrets into your codebase"
   homepage "https://enkryptify.com"
-  version "0.1.5"
+  version "0.1.6"
   license "GPL-3.0-only"
 
   on_macos do
     on_intel do
-      url "https://github.com/Enkryptify/cli/releases/download/v0.1.5/enkryptify_Darwin_x86_64.tar.gz"
-      sha256 "3e491fa331b65c05fc9460e4cd5a9316713c12be53a75b4c362f4fbc27802667"
+      url "https://github.com/Enkryptify/cli/releases/download/v0.1.6/enkryptify_Darwin_x86_64.tar.gz"
+      sha256 "a41318f194fb704f69c224e3b8f8cf1382c074b13f811689bca92da7b90f2b15"
 
       def install
         bin.install "enkryptify"
       end
     end
     on_arm do
-      url "https://github.com/Enkryptify/cli/releases/download/v0.1.5/enkryptify_Darwin_arm64.tar.gz"
-      sha256 "0a7fbd6570d84b017ae6cb8f02c8bdf2e8e1356f87bf0d214ce526695bf44831"
+      url "https://github.com/Enkryptify/cli/releases/download/v0.1.6/enkryptify_Darwin_arm64.tar.gz"
+      sha256 "52d6e8a303d4718fb6f9c6911d73a628aae1a33f5505c8a49d5f7aac634b8f63"
 
       def install
         bin.install "enkryptify"
@@ -30,8 +30,8 @@ class Enkryptify < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Enkryptify/cli/releases/download/v0.1.5/enkryptify_Linux_x86_64.tar.gz"
-        sha256 "22e2fa40c73aa141b560937f26597277b7ddeab545dde0f2a661273aff0368a5"
+        url "https://github.com/Enkryptify/cli/releases/download/v0.1.6/enkryptify_Linux_x86_64.tar.gz"
+        sha256 "c75bffd79c38f717040127aafda67b992208e0a5f8441440c60506dcb494ce73"
 
         def install
           bin.install "enkryptify"
@@ -40,8 +40,8 @@ class Enkryptify < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/Enkryptify/cli/releases/download/v0.1.5/enkryptify_Linux_armv6.tar.gz"
-        sha256 "76b4ec425328c38dd8779ad1c83b4ddfab56e00fdd87519c5a25a1cba6d8f49a"
+        url "https://github.com/Enkryptify/cli/releases/download/v0.1.6/enkryptify_Linux_armv6.tar.gz"
+        sha256 "4231cea79f05e812b52898a0809835cc4aeff364c8151a6391b311504d2880c0"
 
         def install
           bin.install "enkryptify"
@@ -50,8 +50,8 @@ class Enkryptify < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/Enkryptify/cli/releases/download/v0.1.5/enkryptify_Linux_arm64.tar.gz"
-        sha256 "3300dd95b2f4a9e9ec7fe47a15873afa446697600bdeab2abe3bfa6a05067389"
+        url "https://github.com/Enkryptify/cli/releases/download/v0.1.6/enkryptify_Linux_arm64.tar.gz"
+        sha256 "5b0f75a2034de77a5d40f206a724893de3bdf2855f386b8459869f24819124d2"
 
         def install
           bin.install "enkryptify"
