@@ -1,15 +1,15 @@
 class Enkryptify < Formula
   desc "Official Enkryptify CLI for injecting secrets into your codebase"
   homepage "https://enkryptify.com"
-  version "0.3.6"
+  version "0.3.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Enkryptify/cli/releases/download/v0.3.6/enkryptify_Darwin_arm64.tar.gz"
-      sha256 "e45db5b51ce8fa3a40e1f32395b21e71c3ddbb3200875e7ed1e09a6b974d28bb"
+      url "https://github.com/Enkryptify/cli/releases/download/v0.3.7/enkryptify_Darwin_arm64.tar.gz"
+      sha256 "4ed8371e3bd212a9072b03c2fcb394d518fd9e4fc8b0beeffb551b9e1cb04c4f"
     else
-      url "https://github.com/Enkryptify/cli/releases/download/v0.3.6/enkryptify_Darwin_x86_64.tar.gz"
-      sha256 "6b3ef4502c7450c833b9dea433a7e2882b3779577056db016ee47469805dae42"
+      url "https://github.com/Enkryptify/cli/releases/download/v0.3.7/enkryptify_Darwin_x86_64.tar.gz"
+      sha256 "c6158363ef00858ee94222e67deb4680cf1c0de83c8d791cc8ec5b52122adefb"
     end
   end
 
